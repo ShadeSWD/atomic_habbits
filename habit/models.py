@@ -9,7 +9,7 @@ class Habit(models.Model):
 
     created_at = models.DateTimeField(verbose_name='creation date', auto_now_add=True)
     changed_at = models.DateTimeField(verbose_name='change date', auto_now=True)
-    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name='owner')
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name='owner', **NULLABLE)
     place = models.CharField(max_length=50, verbose_name='place of action')
     time = models.TimeField(verbose_name='time of action')
     action = models.CharField(max_length=50, verbose_name='action')
