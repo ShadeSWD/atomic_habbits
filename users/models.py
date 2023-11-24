@@ -6,10 +6,10 @@ NULLABLE = {"null": True, "blank": True}
 
 class User(AbstractUser):
     email = models.EmailField(unique=True, verbose_name='email', **NULLABLE)
-    phone = models.CharField(unique=True, max_length=35, verbose_name='Телефон', **NULLABLE)
-    telegram_id = models.CharField(unique=True, max_length=35, verbose_name="ID telegram", **NULLABLE)
+    phone = models.CharField(unique=True, max_length=35, verbose_name='phone', **NULLABLE)
+    telegram_id = models.CharField(unique=True, max_length=35, verbose_name="Telegram ID", **NULLABLE)
     REQUIRED_FIELDS = []
 
     class Meta:
-        verbose_name = 'пользователь'
-        verbose_name_plural = 'пользователи'
+        verbose_name = 'user'
+        verbose_name_plural = 'users'
