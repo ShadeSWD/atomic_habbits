@@ -35,3 +35,13 @@ Follow these steps:
    python manage.py runserver
 6. **Open app:** 
     Open home page in your browser
+
+## Docker:
+
+* Launch application:
+    Open folder with docker-compose.yml in command line and run:
+    ```bash
+       docker-compose up
+    ```
+* Check app at localhost:
+* To stop app press Ctrl+C in terminal:
