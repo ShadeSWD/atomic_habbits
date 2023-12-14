@@ -19,6 +19,7 @@ redis = "^5.0.1"
 django-celery-beat = "^2.5.0"
 eventlet = "^0.33.3"
 pytest = "^7.4.3"
+python-dotenv = "^1.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
