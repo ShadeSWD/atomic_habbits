@@ -2,4 +2,4 @@
 
 sleep 15
 
-celery -A config worker
+celery -A config worker -l info

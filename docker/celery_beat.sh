@@ -2,4 +2,4 @@
 
 sleep 15
 #
-celery -A config beat
+celery -A config beat -l info

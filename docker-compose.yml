@@ -43,6 +43,7 @@ services:
       - "docker/celery.sh"
     depends_on:
       - atomic_habits
+      - redis
 
   celery-beat:
     build: .
@@ -53,6 +54,7 @@ services:
       - "docker/celery_beat.sh"
     depends_on:
       - atomic_habits
+      - redis
 
 volumes:
   postgresdata:
