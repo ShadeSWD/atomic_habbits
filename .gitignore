@@ -161,3 +161,4 @@ cython_debug/
 /celerybeat-schedule.dir
 /celerybeat-schedule.dat
 /celerybeat-schedule.bak
+/.env-non-dev
